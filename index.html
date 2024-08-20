@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Swear Jar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">Placeholder for Logo</div>
+        <div id="controls">
+            <button id="infoBtn">?</button>
+            <button id="volumeBtn">🔊</button>
+            <input type="range" id="volumeSlider" min="0" max="100" value="50">
+        </div>
+    </header>
+
+    <main>
+        <div id="jar-container">
+            <img id="jar" src="path/to/jar.png" alt="Swear Jar">
+            <img id="coin" src="path/to/coin.png" alt="Coin">
+            <button id="flipCoinBtn">Flip Coin</button>
+        </div>
+        <div id="record-panel">
+            <div id="previousRecords">
+                <h3>Previous Records</h3>
+                <ul id="recordsList"></ul>
+            </div>
+            <div id="currentTally">
+                <h3>Current Tally</h3>
+                <p id="currentTallyValue">0</p>
+            </div>
+            <div id="setSelector">
+                <label for="setSelect">Select Set:</label>
+                <select id="setSelect">
+                    <option value="set1">Set 1</option>
+                    <option value="set2">Set 2</option>
+                    <option value="set3">Set 3</option>
+                </select>
+            </div>
+            <button id="submitBtn">Submit</button>
+        </div>
+    </main>
+
+    <div id="infoModal" class="hidden">
+        <div class="modal-content">
+            <span id="closeInfoBtn">&times;</span>
+            <p>This is a fun site to track how many times Jeremy swears. Click the coin to record a swear. The total count will be kept for each set.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
